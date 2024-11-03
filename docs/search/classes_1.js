@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['repartidor_0',['Repartidor',['../df/ddb/class_repartidor.html',1,'']]]
+  ['repartidor_0',['Repartidor',['../class_repartidor.html',1,'']]]
 ];

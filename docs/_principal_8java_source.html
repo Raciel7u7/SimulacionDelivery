@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Delivery: Archivo de código fuente src/Principal.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo_ITO.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Delivery<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_principal_8java_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Principal.java</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_principal_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">import</span> java.util.*;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">import</span> java.util.concurrent.Semaphore;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_principal.html">   19</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_principal.html">Principal</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_principal.html#aaa8f13996a32615967538d06a25b8120">   20</a></span>    <span class="keyword">private</span> LinkedList&lt;Repartidor&gt; <a class="code hl_variable" href="class_principal.html#aaa8f13996a32615967538d06a25b8120">repartidores</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_principal.html#add387f15fe1bf393d221ef4a540fac4e">   21</a></span>    <span class="keyword">private</span> Semaphore <a class="code hl_variable" href="class_principal.html#add387f15fe1bf393d221ef4a540fac4e">semaforo</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_principal.html#a20cd3af46b3e3ac1eff0fee574bc3d1e">   22</a></span>    <span class="keyword">private</span> Scanner <a class="code hl_variable" href="class_principal.html#a20cd3af46b3e3ac1eff0fee574bc3d1e">sc</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_principal.html#a57fba8fa2eedee48e3467024e1a980da">   30</a></span>    <span class="keyword">public</span> <a class="code hl_function" href="class_principal.html#a57fba8fa2eedee48e3467024e1a980da">Principal</a>() {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_variable" href="class_principal.html#aaa8f13996a32615967538d06a25b8120">repartidores</a> = <span class="keyword">new</span> LinkedList&lt;&gt;();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_variable" href="class_principal.html#add387f15fe1bf393d221ef4a540fac4e">semaforo</a> = <span class="keyword">new</span> Semaphore(1);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_variable" href="class_principal.html#a20cd3af46b3e3ac1eff0fee574bc3d1e">sc</a> = <span class="keyword">new</span> Scanner(System.in);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_principal.html#ac96c38a720f36dd51377cf92c4925944">   42</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_principal.html#ac96c38a720f36dd51377cf92c4925944">crearRepartidores</a>() {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_variable" href="class_principal.html#aaa8f13996a32615967538d06a25b8120">repartidores</a>.add(<span class="keyword">new</span> <a class="code hl_class" href="class_repartidor.html">Repartidor</a>(<span class="stringliteral">&quot;Repartidor&quot;</span> + (i + 1), i, <a class="code hl_variable" href="class_principal.html#add387f15fe1bf393d221ef4a540fac4e">semaforo</a>));</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_principal.html#aa5d6cce117eb627d30947d39249147bc">   54</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_principal.html#aa5d6cce117eb627d30947d39249147bc">mostrarMenu</a>() {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        String[][] menu = {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                {<span class="stringliteral">&quot;Desayuno&quot;</span>, <span class="stringliteral">&quot;Omelette&quot;</span>, <span class="stringliteral">&quot;Huevos rancheros&quot;</span>, <span class="stringliteral">&quot;Hot cakes&quot;</span>, <span class="stringliteral">&quot;Pan tostado&quot;</span>},</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                {<span class="stringliteral">&quot;Comida&quot;</span>, <span class="stringliteral">&quot;Milanesa de pollo&quot;</span>, <span class="stringliteral">&quot;Ensalada cesar&quot;</span>, <span class="stringliteral">&quot;Hamburguesa&quot;</span>, <span class="stringliteral">&quot;Enchiladas&quot;</span>},</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                {<span class="stringliteral">&quot;Cena&quot;</span>, <span class="stringliteral">&quot;Pizza&quot;</span>, <span class="stringliteral">&quot;Pasta a la Bolognesa&quot;</span>, <span class="stringliteral">&quot;Lasagna&quot;</span>, <span class="stringliteral">&quot;Filete de pescado&quot;</span>},</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                {<span class="stringliteral">&quot;Bebidas&quot;</span>, <span class="stringliteral">&quot;Refresco&quot;</span>, <span class="stringliteral">&quot;Jugo de naranja&quot;</span>, <span class="stringliteral">&quot;Limonada&quot;</span>, <span class="stringliteral">&quot;Cafe&quot;</span>},</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                {<span class="stringliteral">&quot;Helado oreo&quot;</span>, <span class="stringliteral">&quot;Helado napolitano&quot;</span>, <span class="stringliteral">&quot;Helado triple chocolate&quot;</span>, <span class="stringliteral">&quot;Helado de vainilla&quot;</span>, <span class="stringliteral">&quot;Helado de cafe&quot;</span>}</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        };</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        System.out.println(<span class="stringliteral">&quot;-----------------------------------------------------------------------------------------------&quot;</span>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        System.out.println(<span class="stringliteral">&quot;Menu:&quot;</span>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 5; i++) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">for</span> (String[] filas : menu) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                System.out.format(<span class="stringliteral">&quot;%25s&quot;</span>, filas[i]);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            System.out.println();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        System.out.println(<span class="stringliteral">&quot;-----------------------------------------------------------------------------------------------&quot;</span>);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_principal.html#a0cbc6ab316864e3c3d5176993854a44d">   97</a></span>    <span class="keyword">private</span> Queue&lt;Pedido&gt; <a class="code hl_function" href="class_principal.html#a0cbc6ab316864e3c3d5176993854a44d">leerPedidos</a>() {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        System.out.println(<span class="stringliteral">&quot;Número de pedidos:&quot;</span>);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordtype">int</span> n = <a class="code hl_variable" href="class_principal.html#a20cd3af46b3e3ac1eff0fee574bc3d1e">sc</a>.nextInt();</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <a class="code hl_variable" href="class_principal.html#a20cd3af46b3e3ac1eff0fee574bc3d1e">sc</a>.nextLine();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        Queue&lt;Pedido&gt; ordenes = <span class="keyword">new</span> LinkedList&lt;&gt;();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            System.out.println(<span class="stringliteral">&quot;Ingrese el alimento (DESAYUNO, COMIDA, O CENA):&quot;</span>);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            String alimento = <a class="code hl_variable" href="class_principal.html#a20cd3af46b3e3ac1eff0fee574bc3d1e">sc</a>.nextLine();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            System.out.println(<span class="stringliteral">&quot;Ingrese la bebida:&quot;</span>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            String bebida = <a class="code hl_variable" href="class_principal.html#a20cd3af46b3e3ac1eff0fee574bc3d1e">sc</a>.nextLine();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            System.out.println(<span class="stringliteral">&quot;Ingrese el helado:&quot;</span>);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            String helado = <a class="code hl_variable" href="class_principal.html#a20cd3af46b3e3ac1eff0fee574bc3d1e">sc</a>.nextLine();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            System.out.println(<span class="stringliteral">&quot;A nombre de quién es el pedido:&quot;</span>);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            String nombre = <a class="code hl_variable" href="class_principal.html#a20cd3af46b3e3ac1eff0fee574bc3d1e">sc</a>.nextLine();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            ordenes.add(<span class="keyword">new</span> <a class="code hl_class" href="class_pedido.html">Pedido</a>(nombre, alimento, bebida, helado));</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordflow">return</span> ordenes;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="class_principal.html#a34fb5c6f7d6d1b39586d712865ca369a">  126</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_principal.html#a34fb5c6f7d6d1b39586d712865ca369a">asignarPedidos</a>(Queue&lt;Pedido&gt; ordenes) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordtype">int</span> cont = 0;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">while</span> (!ordenes.isEmpty()) {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <a class="code hl_class" href="class_repartidor.html">Repartidor</a> repartidor = <a class="code hl_variable" href="class_principal.html#aaa8f13996a32615967538d06a25b8120">repartidores</a>.get(cont);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            repartidor.<a class="code hl_function" href="class_repartidor.html#a83fd041fc0f4a53920f95a7e352f44fe">agregarPedido</a>(ordenes.poll());</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            <span class="keywordflow">if</span> (repartidor.<a class="code hl_function" href="class_repartidor.html#ada72d4c48aea7f0213fc30e9b8584913">getPedidos</a>().size() == 3) {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                cont = (cont + 1) % <a class="code hl_variable" href="class_principal.html#aaa8f13996a32615967538d06a25b8120">repartidores</a>.size();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
+</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="foldopen" id="foldopen00149" data-start="{" data-end="}">
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="class_principal.html#a07f807fc9dc5737b930c3f334faa4f8e">  149</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_principal.html#a07f807fc9dc5737b930c3f334faa4f8e">empezarRepartir</a>() {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordflow">for</span> (<a class="code hl_class" href="class_repartidor.html">Repartidor</a> repartidor : <a class="code hl_variable" href="class_principal.html#aaa8f13996a32615967538d06a25b8120">repartidores</a>) {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <span class="keywordflow">if</span> (repartidor.tienePedido()) {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                <span class="keyword">new</span> Thread(repartidor).start();</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    }</div>
+</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="foldopen" id="foldopen00160" data-start="{" data-end="}">
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="class_principal.html#ad5bc8eb7c713642d22b732c519e0b83a">  160</a></span>    <span class="keyword">private</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_principal.html#ad5bc8eb7c713642d22b732c519e0b83a">cerrarScanner</a>() {</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <a class="code hl_variable" href="class_principal.html#a20cd3af46b3e3ac1eff0fee574bc3d1e">sc</a>.close();</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
+</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="foldopen" id="foldopen00170" data-start="{" data-end="}">
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="class_principal.html#a122f5159f9c20dc1ac51d94a71dde7a5">  170</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_principal.html#a122f5159f9c20dc1ac51d94a71dde7a5">main</a>(String[] args) {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <a class="code hl_class" href="class_principal.html">Principal</a> principal = <span class="keyword">new</span> <a class="code hl_function" href="class_principal.html#a57fba8fa2eedee48e3467024e1a980da">Principal</a>();</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        principal.<a class="code hl_function" href="class_principal.html#ac96c38a720f36dd51377cf92c4925944">crearRepartidores</a>();</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        principal.<a class="code hl_function" href="class_principal.html#aa5d6cce117eb627d30947d39249147bc">mostrarMenu</a>();</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        Queue&lt;Pedido&gt; ordenes = principal.<a class="code hl_function" href="class_principal.html#a0cbc6ab316864e3c3d5176993854a44d">leerPedidos</a>();</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        principal.<a class="code hl_function" href="class_principal.html#a34fb5c6f7d6d1b39586d712865ca369a">asignarPedidos</a>(ordenes);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        principal.<a class="code hl_function" href="class_principal.html#a07f807fc9dc5737b930c3f334faa4f8e">empezarRepartir</a>();</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        principal.<a class="code hl_function" href="class_principal.html#ad5bc8eb7c713642d22b732c519e0b83a">cerrarScanner</a>();</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    }</div>
+</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>}</div>
+</div>
+<div class="ttc" id="aclass_pedido_html"><div class="ttname"><a href="class_pedido.html">Pedido</a></div><div class="ttdef"><b>Definition</b> <a href="_pedido_8java_source.html#l00033">Pedido.java:33</a></div></div>
+<div class="ttc" id="aclass_principal_html"><div class="ttname"><a href="class_principal.html">Principal</a></div><div class="ttdef"><b>Definition</b> <a href="#l00019">Principal.java:19</a></div></div>
+<div class="ttc" id="aclass_principal_html_a07f807fc9dc5737b930c3f334faa4f8e"><div class="ttname"><a href="class_principal.html#a07f807fc9dc5737b930c3f334faa4f8e">Principal.empezarRepartir</a></div><div class="ttdeci">void empezarRepartir()</div><div class="ttdef"><b>Definition</b> <a href="#l00149">Principal.java:149</a></div></div>
+<div class="ttc" id="aclass_principal_html_a0cbc6ab316864e3c3d5176993854a44d"><div class="ttname"><a href="class_principal.html#a0cbc6ab316864e3c3d5176993854a44d">Principal.leerPedidos</a></div><div class="ttdeci">Queue&lt; Pedido &gt; leerPedidos()</div><div class="ttdef"><b>Definition</b> <a href="#l00097">Principal.java:97</a></div></div>
+<div class="ttc" id="aclass_principal_html_a122f5159f9c20dc1ac51d94a71dde7a5"><div class="ttname"><a href="class_principal.html#a122f5159f9c20dc1ac51d94a71dde7a5">Principal.main</a></div><div class="ttdeci">static void main(String[] args)</div><div class="ttdef"><b>Definition</b> <a href="#l00170">Principal.java:170</a></div></div>
+<div class="ttc" id="aclass_principal_html_a20cd3af46b3e3ac1eff0fee574bc3d1e"><div class="ttname"><a href="class_principal.html#a20cd3af46b3e3ac1eff0fee574bc3d1e">Principal.sc</a></div><div class="ttdeci">Scanner sc</div><div class="ttdef"><b>Definition</b> <a href="#l00022">Principal.java:22</a></div></div>
+<div class="ttc" id="aclass_principal_html_a34fb5c6f7d6d1b39586d712865ca369a"><div class="ttname"><a href="class_principal.html#a34fb5c6f7d6d1b39586d712865ca369a">Principal.asignarPedidos</a></div><div class="ttdeci">void asignarPedidos(Queue&lt; Pedido &gt; ordenes)</div><div class="ttdef"><b>Definition</b> <a href="#l00126">Principal.java:126</a></div></div>
+<div class="ttc" id="aclass_principal_html_a57fba8fa2eedee48e3467024e1a980da"><div class="ttname"><a href="class_principal.html#a57fba8fa2eedee48e3467024e1a980da">Principal.Principal</a></div><div class="ttdeci">Principal()</div><div class="ttdef"><b>Definition</b> <a href="#l00030">Principal.java:30</a></div></div>
+<div class="ttc" id="aclass_principal_html_aa5d6cce117eb627d30947d39249147bc"><div class="ttname"><a href="class_principal.html#aa5d6cce117eb627d30947d39249147bc">Principal.mostrarMenu</a></div><div class="ttdeci">void mostrarMenu()</div><div class="ttdef"><b>Definition</b> <a href="#l00054">Principal.java:54</a></div></div>
+<div class="ttc" id="aclass_principal_html_aaa8f13996a32615967538d06a25b8120"><div class="ttname"><a href="class_principal.html#aaa8f13996a32615967538d06a25b8120">Principal.repartidores</a></div><div class="ttdeci">LinkedList&lt; Repartidor &gt; repartidores</div><div class="ttdef"><b>Definition</b> <a href="#l00020">Principal.java:20</a></div></div>
+<div class="ttc" id="aclass_principal_html_ac96c38a720f36dd51377cf92c4925944"><div class="ttname"><a href="class_principal.html#ac96c38a720f36dd51377cf92c4925944">Principal.crearRepartidores</a></div><div class="ttdeci">void crearRepartidores()</div><div class="ttdef"><b>Definition</b> <a href="#l00042">Principal.java:42</a></div></div>
+<div class="ttc" id="aclass_principal_html_ad5bc8eb7c713642d22b732c519e0b83a"><div class="ttname"><a href="class_principal.html#ad5bc8eb7c713642d22b732c519e0b83a">Principal.cerrarScanner</a></div><div class="ttdeci">void cerrarScanner()</div><div class="ttdef"><b>Definition</b> <a href="#l00160">Principal.java:160</a></div></div>
+<div class="ttc" id="aclass_principal_html_add387f15fe1bf393d221ef4a540fac4e"><div class="ttname"><a href="class_principal.html#add387f15fe1bf393d221ef4a540fac4e">Principal.semaforo</a></div><div class="ttdeci">Semaphore semaforo</div><div class="ttdef"><b>Definition</b> <a href="#l00021">Principal.java:21</a></div></div>
+<div class="ttc" id="aclass_repartidor_html"><div class="ttname"><a href="class_repartidor.html">Repartidor</a></div><div class="ttdef"><b>Definition</b> <a href="_repartidor_8java_source.html#l00031">Repartidor.java:31</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_a83fd041fc0f4a53920f95a7e352f44fe"><div class="ttname"><a href="class_repartidor.html#a83fd041fc0f4a53920f95a7e352f44fe">Repartidor.agregarPedido</a></div><div class="ttdeci">synchronized void agregarPedido(Pedido pedido)</div><div class="ttdef"><b>Definition</b> <a href="_repartidor_8java_source.html#l00117">Repartidor.java:117</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_ada72d4c48aea7f0213fc30e9b8584913"><div class="ttname"><a href="class_repartidor.html#ada72d4c48aea7f0213fc30e9b8584913">Repartidor.getPedidos</a></div><div class="ttdeci">synchronized Stack&lt; Pedido &gt; getPedidos()</div><div class="ttdef"><b>Definition</b> <a href="_repartidor_8java_source.html#l00159">Repartidor.java:159</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_principal_8java.html">Principal.java</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

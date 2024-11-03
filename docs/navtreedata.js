@@ -44,7 +44,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"_pedido_8java.html"
 ];
 
 var SYNCONMSG = 'pulsar para deshabilitar sincronización';
