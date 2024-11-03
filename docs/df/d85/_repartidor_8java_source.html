@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Delivery: Archivo de código fuente src/Repartidor.java</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../logo_ITO.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Delivery<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('df/d85/_repartidor_8java_source.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Repartidor.java</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../df/d85/_repartidor_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">import</span> java.util.Random;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">import</span> java.util.Stack;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">import</span> java.util.concurrent.Semaphore;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html">   31</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../df/ddb/class_repartidor.html">Repartidor</a> <span class="keyword">implements</span> Runnable {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#ad2b92ff3eaff5f9affa90659701f6295">   32</a></span>    <span class="keyword">private</span> String <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#ad2b92ff3eaff5f9affa90659701f6295">nombre</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#a4c6ac785cca585d642e137da359fc8d2">   33</a></span>    <span class="keyword">private</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#a4c6ac785cca585d642e137da359fc8d2">idRepartidor</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#aaaa3ffed0f5a64da01b2edbe36c53068">   34</a></span>    <span class="keyword">private</span> Stack&lt;Pedido&gt; <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aaaa3ffed0f5a64da01b2edbe36c53068">pedidos</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#ac7512033aa8da2f4d6675d36ea9e3479">   35</a></span>    <span class="keyword">private</span> <span class="keywordtype">boolean</span> <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#ac7512033aa8da2f4d6675d36ea9e3479">estado</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#aeb2a0e5792d9c6eed1fd37f49fa7c86e">   36</a></span>    <span class="keyword">private</span> Semaphore <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aeb2a0e5792d9c6eed1fd37f49fa7c86e">semaforo</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#a68c4db08251b90dc36c5f0d3234dab67">   48</a></span>    <span class="keyword">public</span> <a class="code hl_function" href="../../df/ddb/class_repartidor.html#a68c4db08251b90dc36c5f0d3234dab67">Repartidor</a>(String <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#ad2b92ff3eaff5f9affa90659701f6295">nombre</a>, <span class="keywordtype">int</span> <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#a4c6ac785cca585d642e137da359fc8d2">idRepartidor</a>, Semaphore <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aeb2a0e5792d9c6eed1fd37f49fa7c86e">semaforo</a>) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        this.nombre = <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#ad2b92ff3eaff5f9affa90659701f6295">nombre</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        this.idRepartidor = <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#a4c6ac785cca585d642e137da359fc8d2">idRepartidor</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        this.pedidos = <span class="keyword">new</span> Stack&lt;&gt;();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        this.estado = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        this.semaforo = <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aeb2a0e5792d9c6eed1fd37f49fa7c86e">semaforo</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    @Override</div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#a2ed2fc0ce083d0c03624a329f898e565">   64</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/ddb/class_repartidor.html#a2ed2fc0ce083d0c03624a329f898e565">run</a>() {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <a class="code hl_function" href="../../df/ddb/class_repartidor.html#a44ee5b89d57fe746b2ff94518151012e">entregarPedido</a>();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#a44ee5b89d57fe746b2ff94518151012e">   75</a></span>    <span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/ddb/class_repartidor.html#a44ee5b89d57fe746b2ff94518151012e">entregarPedido</a>() {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aeb2a0e5792d9c6eed1fd37f49fa7c86e">semaforo</a>.acquire();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">while</span> (!<a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aaaa3ffed0f5a64da01b2edbe36c53068">pedidos</a>.isEmpty()) {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                    Random random = <span class="keyword">new</span> Random();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                    Thread.sleep(1000);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                    <span class="comment">//Thread.sleep(5000 + random.nextInt(25000));</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                    <a class="code hl_class" href="../../db/da0/class_pedido.html">Pedido</a> pedidoTemporal = <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aaaa3ffed0f5a64da01b2edbe36c53068">pedidos</a>.pop();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    pedidoTemporal.<a class="code hl_function" href="../../db/da0/class_pedido.html#a0861779a347e67bc42974b0bf69ae971">setFechaEntrega</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                    System.out.println(this.nombre + <span class="stringliteral">&quot; entrego el &quot;</span> + pedidoTemporal);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#ac7512033aa8da2f4d6675d36ea9e3479">estado</a> = !<a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aaaa3ffed0f5a64da01b2edbe36c53068">pedidos</a>.isEmpty();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                } <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    <span class="comment">// e.printStackTrace();</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        } <span class="keywordflow">catch</span> (InterruptedException e) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="comment">// e.printStackTrace();</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        } <span class="keywordflow">finally</span> {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aeb2a0e5792d9c6eed1fd37f49fa7c86e">semaforo</a>.release();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#af9511618dea30611d8c39c04e4bb933c">  105</a></span>    <span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keywordtype">boolean</span> <a class="code hl_function" href="../../df/ddb/class_repartidor.html#af9511618dea30611d8c39c04e4bb933c">tienePedido</a>() {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">return</span> !<a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aaaa3ffed0f5a64da01b2edbe36c53068">pedidos</a>.isEmpty();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#a83fd041fc0f4a53920f95a7e352f44fe">  117</a></span>    <span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/ddb/class_repartidor.html#a83fd041fc0f4a53920f95a7e352f44fe">agregarPedido</a>(<a class="code hl_class" href="../../db/da0/class_pedido.html">Pedido</a> pedido) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aaaa3ffed0f5a64da01b2edbe36c53068">pedidos</a>.size() &lt; 3) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aaaa3ffed0f5a64da01b2edbe36c53068">pedidos</a>.push(pedido);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#ac7512033aa8da2f4d6675d36ea9e3479">estado</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aaaa3ffed0f5a64da01b2edbe36c53068">pedidos</a>.size() == 3) {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                <span class="keyword">new</span> Thread(<span class="keyword">this</span>).start();</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    }</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="foldopen" id="foldopen00132" data-start="{" data-end="}">
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#add6708eb3528bf44db5d22c0a7ebef73">  132</a></span>    <span class="keyword">public</span> String <a class="code hl_function" href="../../df/ddb/class_repartidor.html#add6708eb3528bf44db5d22c0a7ebef73">getNombre</a>() {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#ad2b92ff3eaff5f9affa90659701f6295">nombre</a>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
+</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="foldopen" id="foldopen00141" data-start="{" data-end="}">
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#abbc42827198092559d377c094392f975">  141</a></span>    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_function" href="../../df/ddb/class_repartidor.html#abbc42827198092559d377c094392f975">getIdRepartidor</a>() {</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#a4c6ac785cca585d642e137da359fc8d2">idRepartidor</a>;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    }</div>
+</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="foldopen" id="foldopen00150" data-start="{" data-end="}">
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#a46d45b18289218537423e064c9631057">  150</a></span>    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code hl_function" href="../../df/ddb/class_repartidor.html#a46d45b18289218537423e064c9631057">getEstado</a>() {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#ac7512033aa8da2f4d6675d36ea9e3479">estado</a>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
+</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="../../df/ddb/class_repartidor.html#ada72d4c48aea7f0213fc30e9b8584913">  159</a></span>    <span class="keyword">public</span> <span class="keyword">synchronized</span> Stack&lt;Pedido&gt; <a class="code hl_function" href="../../df/ddb/class_repartidor.html#ada72d4c48aea7f0213fc30e9b8584913">getPedidos</a>() {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../df/ddb/class_repartidor.html#aaaa3ffed0f5a64da01b2edbe36c53068">pedidos</a>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
+</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>}</div>
+</div>
+<div class="ttc" id="aclass_pedido_html"><div class="ttname"><a href="../../db/da0/class_pedido.html">Pedido</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/db0/_pedido_8java_source.html#l00033">Pedido.java:33</a></div></div>
+<div class="ttc" id="aclass_pedido_html_a0861779a347e67bc42974b0bf69ae971"><div class="ttname"><a href="../../db/da0/class_pedido.html#a0861779a347e67bc42974b0bf69ae971">Pedido.setFechaEntrega</a></div><div class="ttdeci">void setFechaEntrega()</div><div class="ttdef"><b>Definition</b> <a href="../../dc/db0/_pedido_8java_source.html#l00070">Pedido.java:70</a></div></div>
+<div class="ttc" id="aclass_repartidor_html"><div class="ttname"><a href="../../df/ddb/class_repartidor.html">Repartidor</a></div><div class="ttdef"><b>Definition</b> <a href="#l00031">Repartidor.java:31</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_a2ed2fc0ce083d0c03624a329f898e565"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#a2ed2fc0ce083d0c03624a329f898e565">Repartidor.run</a></div><div class="ttdeci">void run()</div><div class="ttdef"><b>Definition</b> <a href="#l00064">Repartidor.java:64</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_a44ee5b89d57fe746b2ff94518151012e"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#a44ee5b89d57fe746b2ff94518151012e">Repartidor.entregarPedido</a></div><div class="ttdeci">synchronized void entregarPedido()</div><div class="ttdef"><b>Definition</b> <a href="#l00075">Repartidor.java:75</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_a46d45b18289218537423e064c9631057"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#a46d45b18289218537423e064c9631057">Repartidor.getEstado</a></div><div class="ttdeci">boolean getEstado()</div><div class="ttdef"><b>Definition</b> <a href="#l00150">Repartidor.java:150</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_a4c6ac785cca585d642e137da359fc8d2"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#a4c6ac785cca585d642e137da359fc8d2">Repartidor.idRepartidor</a></div><div class="ttdeci">int idRepartidor</div><div class="ttdef"><b>Definition</b> <a href="#l00033">Repartidor.java:33</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_a68c4db08251b90dc36c5f0d3234dab67"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#a68c4db08251b90dc36c5f0d3234dab67">Repartidor.Repartidor</a></div><div class="ttdeci">Repartidor(String nombre, int idRepartidor, Semaphore semaforo)</div><div class="ttdef"><b>Definition</b> <a href="#l00048">Repartidor.java:48</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_a83fd041fc0f4a53920f95a7e352f44fe"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#a83fd041fc0f4a53920f95a7e352f44fe">Repartidor.agregarPedido</a></div><div class="ttdeci">synchronized void agregarPedido(Pedido pedido)</div><div class="ttdef"><b>Definition</b> <a href="#l00117">Repartidor.java:117</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_aaaa3ffed0f5a64da01b2edbe36c53068"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#aaaa3ffed0f5a64da01b2edbe36c53068">Repartidor.pedidos</a></div><div class="ttdeci">Stack&lt; Pedido &gt; pedidos</div><div class="ttdef"><b>Definition</b> <a href="#l00034">Repartidor.java:34</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_abbc42827198092559d377c094392f975"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#abbc42827198092559d377c094392f975">Repartidor.getIdRepartidor</a></div><div class="ttdeci">int getIdRepartidor()</div><div class="ttdef"><b>Definition</b> <a href="#l00141">Repartidor.java:141</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_ac7512033aa8da2f4d6675d36ea9e3479"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#ac7512033aa8da2f4d6675d36ea9e3479">Repartidor.estado</a></div><div class="ttdeci">boolean estado</div><div class="ttdef"><b>Definition</b> <a href="#l00035">Repartidor.java:35</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_ad2b92ff3eaff5f9affa90659701f6295"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#ad2b92ff3eaff5f9affa90659701f6295">Repartidor.nombre</a></div><div class="ttdeci">String nombre</div><div class="ttdef"><b>Definition</b> <a href="#l00032">Repartidor.java:32</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_ada72d4c48aea7f0213fc30e9b8584913"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#ada72d4c48aea7f0213fc30e9b8584913">Repartidor.getPedidos</a></div><div class="ttdeci">synchronized Stack&lt; Pedido &gt; getPedidos()</div><div class="ttdef"><b>Definition</b> <a href="#l00159">Repartidor.java:159</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_add6708eb3528bf44db5d22c0a7ebef73"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#add6708eb3528bf44db5d22c0a7ebef73">Repartidor.getNombre</a></div><div class="ttdeci">String getNombre()</div><div class="ttdef"><b>Definition</b> <a href="#l00132">Repartidor.java:132</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_aeb2a0e5792d9c6eed1fd37f49fa7c86e"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#aeb2a0e5792d9c6eed1fd37f49fa7c86e">Repartidor.semaforo</a></div><div class="ttdeci">Semaphore semaforo</div><div class="ttdef"><b>Definition</b> <a href="#l00036">Repartidor.java:36</a></div></div>
+<div class="ttc" id="aclass_repartidor_html_af9511618dea30611d8c39c04e4bb933c"><div class="ttname"><a href="../../df/ddb/class_repartidor.html#af9511618dea30611d8c39c04e4bb933c">Repartidor.tienePedido</a></div><div class="ttdeci">synchronized boolean tienePedido()</div><div class="ttdef"><b>Definition</b> <a href="#l00105">Repartidor.java:105</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../df/d85/_repartidor_8java.html">Repartidor.java</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

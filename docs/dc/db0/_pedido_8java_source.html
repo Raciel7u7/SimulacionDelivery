@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Delivery: Archivo de código fuente src/Pedido.java</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../logo_ITO.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Delivery<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dc/db0/_pedido_8java_source.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Pedido.java</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dc/db0/_pedido_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">import</span> java.time.LocalDateTime;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">import</span> java.time.format.DateTimeFormatter;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html">   33</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="../../db/da0/class_pedido.html">Pedido</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#aed270734a01380131d31c862ba701a49">   34</a></span>    <span class="keyword">private</span> String <a class="code hl_variable" href="../../db/da0/class_pedido.html#aed270734a01380131d31c862ba701a49">nombre</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#aa1b5b21a0e190821e2047db893839142">   35</a></span>    <span class="keyword">private</span> String <a class="code hl_variable" href="../../db/da0/class_pedido.html#aa1b5b21a0e190821e2047db893839142">alimento</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#ad5314c9ea2038941e17e938b1362581f">   36</a></span>    <span class="keyword">private</span> String <a class="code hl_variable" href="../../db/da0/class_pedido.html#ad5314c9ea2038941e17e938b1362581f">bebida</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#a04342bde268f1c94100e59666a93d1bb">   37</a></span>    <span class="keyword">private</span> String <a class="code hl_variable" href="../../db/da0/class_pedido.html#a04342bde268f1c94100e59666a93d1bb">helado</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#a064482b1892828ad46df15237e5be854">   38</a></span>    <span class="keyword">private</span> LocalDateTime <a class="code hl_variable" href="../../db/da0/class_pedido.html#a064482b1892828ad46df15237e5be854">fechaPedido</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#a46f0b476b543ad541b7a82a921cc39e4">   39</a></span>    <span class="keyword">private</span> LocalDateTime <a class="code hl_variable" href="../../db/da0/class_pedido.html#a46f0b476b543ad541b7a82a921cc39e4">fechaEntrega</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#a98473fb65a86f1d28b405d96d09d8c9b">   41</a></span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> DateTimeFormatter <a class="code hl_variable" href="../../db/da0/class_pedido.html#a98473fb65a86f1d28b405d96d09d8c9b">personalizado</a> = DateTimeFormatter.ofPattern(<span class="stringliteral">&quot;dd/MM/yyyy HH:mm:ss&quot;</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#a134197c9645efc48cd08d20a27f4de36">   55</a></span>    <span class="keyword">public</span> <a class="code hl_function" href="../../db/da0/class_pedido.html#a134197c9645efc48cd08d20a27f4de36">Pedido</a>(String <a class="code hl_variable" href="../../db/da0/class_pedido.html#aed270734a01380131d31c862ba701a49">nombre</a>, String <a class="code hl_variable" href="../../db/da0/class_pedido.html#aa1b5b21a0e190821e2047db893839142">alimento</a>, String <a class="code hl_variable" href="../../db/da0/class_pedido.html#ad5314c9ea2038941e17e938b1362581f">bebida</a>, String <a class="code hl_variable" href="../../db/da0/class_pedido.html#a04342bde268f1c94100e59666a93d1bb">helado</a>) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        this.nombre = <a class="code hl_variable" href="../../db/da0/class_pedido.html#aed270734a01380131d31c862ba701a49">nombre</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        this.alimento = <a class="code hl_variable" href="../../db/da0/class_pedido.html#aa1b5b21a0e190821e2047db893839142">alimento</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        this.bebida = <a class="code hl_variable" href="../../db/da0/class_pedido.html#ad5314c9ea2038941e17e938b1362581f">bebida</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        this.helado = <a class="code hl_variable" href="../../db/da0/class_pedido.html#a04342bde268f1c94100e59666a93d1bb">helado</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        this.fechaPedido = LocalDateTime.now();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#a0861779a347e67bc42974b0bf69ae971">   70</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../db/da0/class_pedido.html#a0861779a347e67bc42974b0bf69ae971">setFechaEntrega</a>() {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        this.fechaEntrega = LocalDateTime.now();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#a2e931051c9c314dee2a6a7264569a766">   79</a></span>    <span class="keyword">public</span> LocalDateTime <a class="code hl_function" href="../../db/da0/class_pedido.html#a2e931051c9c314dee2a6a7264569a766">getFechaEntrega</a>() {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../db/da0/class_pedido.html#a46f0b476b543ad541b7a82a921cc39e4">fechaEntrega</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#ae09c1c0a238815d2577e4ecde6cae77d">   88</a></span>    <span class="keyword">public</span> String <a class="code hl_function" href="../../db/da0/class_pedido.html#ae09c1c0a238815d2577e4ecde6cae77d">getNombre</a>() {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../db/da0/class_pedido.html#aed270734a01380131d31c862ba701a49">nombre</a>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#ae76ac3918e2aea2182e4101d1f623f5c">   97</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../db/da0/class_pedido.html#ae76ac3918e2aea2182e4101d1f623f5c">setNombre</a>(String <a class="code hl_variable" href="../../db/da0/class_pedido.html#aed270734a01380131d31c862ba701a49">nombre</a>) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        this.nombre = <a class="code hl_variable" href="../../db/da0/class_pedido.html#aed270734a01380131d31c862ba701a49">nombre</a>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#ac43d623ea50d9c09251c20d539b176e4">  106</a></span>    <span class="keyword">public</span> String <a class="code hl_function" href="../../db/da0/class_pedido.html#ac43d623ea50d9c09251c20d539b176e4">getAlimento</a>() {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../db/da0/class_pedido.html#aa1b5b21a0e190821e2047db893839142">alimento</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#ab186d936229d3fe61dd9721bf02a7033">  115</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../db/da0/class_pedido.html#ab186d936229d3fe61dd9721bf02a7033">setAlimento</a>(String <a class="code hl_variable" href="../../db/da0/class_pedido.html#aa1b5b21a0e190821e2047db893839142">alimento</a>) {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        this.alimento = <a class="code hl_variable" href="../../db/da0/class_pedido.html#aa1b5b21a0e190821e2047db893839142">alimento</a>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
+</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#a910b30b54e1ed65ebe53b95e3328e77a">  124</a></span>    <span class="keyword">public</span> String <a class="code hl_function" href="../../db/da0/class_pedido.html#a910b30b54e1ed65ebe53b95e3328e77a">getBebida</a>() {</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../db/da0/class_pedido.html#ad5314c9ea2038941e17e938b1362581f">bebida</a>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
+</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="}">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#a9df7f8bde905052adade4e6c1ec08872">  133</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../db/da0/class_pedido.html#a9df7f8bde905052adade4e6c1ec08872">setBebida</a>(String <a class="code hl_variable" href="../../db/da0/class_pedido.html#ad5314c9ea2038941e17e938b1362581f">bebida</a>) {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        this.bebida = <a class="code hl_variable" href="../../db/da0/class_pedido.html#ad5314c9ea2038941e17e938b1362581f">bebida</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
+</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="}">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#ae6dca04322ed9e8a32bfd9a829a2ebe9">  142</a></span>    <span class="keyword">public</span> String <a class="code hl_function" href="../../db/da0/class_pedido.html#ae6dca04322ed9e8a32bfd9a829a2ebe9">getHelado</a>() {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="../../db/da0/class_pedido.html#a04342bde268f1c94100e59666a93d1bb">helado</a>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    }</div>
+</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#a03f871439bc4f4f99067c0d3576da8cc">  151</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../db/da0/class_pedido.html#a03f871439bc4f4f99067c0d3576da8cc">setHelado</a>(String <a class="code hl_variable" href="../../db/da0/class_pedido.html#a04342bde268f1c94100e59666a93d1bb">helado</a>) {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        this.helado = <a class="code hl_variable" href="../../db/da0/class_pedido.html#a04342bde268f1c94100e59666a93d1bb">helado</a>;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    }</div>
+</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    @Override</div>
+<div class="foldopen" id="foldopen00164" data-start="{" data-end="}">
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="../../db/da0/class_pedido.html#a3e6592be31ffee8c6732170a37d8748d">  164</a></span>    <span class="keyword">public</span> String <a class="code hl_function" href="../../db/da0/class_pedido.html#a3e6592be31ffee8c6732170a37d8748d">toString</a>() {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Pedido a nombre de &quot;</span> + <a class="code hl_variable" href="../../db/da0/class_pedido.html#aed270734a01380131d31c862ba701a49">nombre</a> + <span class="stringliteral">&quot;\nalimento &quot;</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                + <a class="code hl_variable" href="../../db/da0/class_pedido.html#aa1b5b21a0e190821e2047db893839142">alimento</a> + <span class="stringliteral">&quot;\nbebida &quot;</span> + <a class="code hl_variable" href="../../db/da0/class_pedido.html#ad5314c9ea2038941e17e938b1362581f">bebida</a> + <span class="stringliteral">&quot;\nhelado &quot;</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                + <a class="code hl_variable" href="../../db/da0/class_pedido.html#a04342bde268f1c94100e59666a93d1bb">helado</a> + <span class="stringliteral">&quot;\nFecha del pedido &quot;</span> + <a class="code hl_variable" href="../../db/da0/class_pedido.html#a064482b1892828ad46df15237e5be854">fechaPedido</a>.format(<a class="code hl_variable" href="../../db/da0/class_pedido.html#a98473fb65a86f1d28b405d96d09d8c9b">personalizado</a>)</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                + (<a class="code hl_variable" href="../../db/da0/class_pedido.html#a46f0b476b543ad541b7a82a921cc39e4">fechaEntrega</a> != <span class="keyword">null</span> ? <span class="stringliteral">&quot;\nfechaEntrega &quot;</span> + <a class="code hl_variable" href="../../db/da0/class_pedido.html#a46f0b476b543ad541b7a82a921cc39e4">fechaEntrega</a>.format(<a class="code hl_variable" href="../../db/da0/class_pedido.html#a98473fb65a86f1d28b405d96d09d8c9b">personalizado</a>) : <span class="stringliteral">&quot;&quot;</span>) + <span class="stringliteral">&quot;\n&quot;</span>; <span class="comment">// MOSTRAR LA FECHA DE ENTREGA SI NO ESTA VACIA</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    }</div>
+</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>}</div>
+</div>
+<div class="ttc" id="aclass_pedido_html"><div class="ttname"><a href="../../db/da0/class_pedido.html">Pedido</a></div><div class="ttdef"><b>Definition</b> <a href="#l00033">Pedido.java:33</a></div></div>
+<div class="ttc" id="aclass_pedido_html_a03f871439bc4f4f99067c0d3576da8cc"><div class="ttname"><a href="../../db/da0/class_pedido.html#a03f871439bc4f4f99067c0d3576da8cc">Pedido.setHelado</a></div><div class="ttdeci">void setHelado(String helado)</div><div class="ttdef"><b>Definition</b> <a href="#l00151">Pedido.java:151</a></div></div>
+<div class="ttc" id="aclass_pedido_html_a04342bde268f1c94100e59666a93d1bb"><div class="ttname"><a href="../../db/da0/class_pedido.html#a04342bde268f1c94100e59666a93d1bb">Pedido.helado</a></div><div class="ttdeci">String helado</div><div class="ttdef"><b>Definition</b> <a href="#l00037">Pedido.java:37</a></div></div>
+<div class="ttc" id="aclass_pedido_html_a064482b1892828ad46df15237e5be854"><div class="ttname"><a href="../../db/da0/class_pedido.html#a064482b1892828ad46df15237e5be854">Pedido.fechaPedido</a></div><div class="ttdeci">LocalDateTime fechaPedido</div><div class="ttdef"><b>Definition</b> <a href="#l00038">Pedido.java:38</a></div></div>
+<div class="ttc" id="aclass_pedido_html_a0861779a347e67bc42974b0bf69ae971"><div class="ttname"><a href="../../db/da0/class_pedido.html#a0861779a347e67bc42974b0bf69ae971">Pedido.setFechaEntrega</a></div><div class="ttdeci">void setFechaEntrega()</div><div class="ttdef"><b>Definition</b> <a href="#l00070">Pedido.java:70</a></div></div>
+<div class="ttc" id="aclass_pedido_html_a134197c9645efc48cd08d20a27f4de36"><div class="ttname"><a href="../../db/da0/class_pedido.html#a134197c9645efc48cd08d20a27f4de36">Pedido.Pedido</a></div><div class="ttdeci">Pedido(String nombre, String alimento, String bebida, String helado)</div><div class="ttdef"><b>Definition</b> <a href="#l00055">Pedido.java:55</a></div></div>
+<div class="ttc" id="aclass_pedido_html_a2e931051c9c314dee2a6a7264569a766"><div class="ttname"><a href="../../db/da0/class_pedido.html#a2e931051c9c314dee2a6a7264569a766">Pedido.getFechaEntrega</a></div><div class="ttdeci">LocalDateTime getFechaEntrega()</div><div class="ttdef"><b>Definition</b> <a href="#l00079">Pedido.java:79</a></div></div>
+<div class="ttc" id="aclass_pedido_html_a3e6592be31ffee8c6732170a37d8748d"><div class="ttname"><a href="../../db/da0/class_pedido.html#a3e6592be31ffee8c6732170a37d8748d">Pedido.toString</a></div><div class="ttdeci">String toString()</div><div class="ttdef"><b>Definition</b> <a href="#l00164">Pedido.java:164</a></div></div>
+<div class="ttc" id="aclass_pedido_html_a46f0b476b543ad541b7a82a921cc39e4"><div class="ttname"><a href="../../db/da0/class_pedido.html#a46f0b476b543ad541b7a82a921cc39e4">Pedido.fechaEntrega</a></div><div class="ttdeci">LocalDateTime fechaEntrega</div><div class="ttdef"><b>Definition</b> <a href="#l00039">Pedido.java:39</a></div></div>
+<div class="ttc" id="aclass_pedido_html_a910b30b54e1ed65ebe53b95e3328e77a"><div class="ttname"><a href="../../db/da0/class_pedido.html#a910b30b54e1ed65ebe53b95e3328e77a">Pedido.getBebida</a></div><div class="ttdeci">String getBebida()</div><div class="ttdef"><b>Definition</b> <a href="#l00124">Pedido.java:124</a></div></div>
+<div class="ttc" id="aclass_pedido_html_a98473fb65a86f1d28b405d96d09d8c9b"><div class="ttname"><a href="../../db/da0/class_pedido.html#a98473fb65a86f1d28b405d96d09d8c9b">Pedido.personalizado</a></div><div class="ttdeci">static final DateTimeFormatter personalizado</div><div class="ttdef"><b>Definition</b> <a href="#l00041">Pedido.java:41</a></div></div>
+<div class="ttc" id="aclass_pedido_html_a9df7f8bde905052adade4e6c1ec08872"><div class="ttname"><a href="../../db/da0/class_pedido.html#a9df7f8bde905052adade4e6c1ec08872">Pedido.setBebida</a></div><div class="ttdeci">void setBebida(String bebida)</div><div class="ttdef"><b>Definition</b> <a href="#l00133">Pedido.java:133</a></div></div>
+<div class="ttc" id="aclass_pedido_html_aa1b5b21a0e190821e2047db893839142"><div class="ttname"><a href="../../db/da0/class_pedido.html#aa1b5b21a0e190821e2047db893839142">Pedido.alimento</a></div><div class="ttdeci">String alimento</div><div class="ttdef"><b>Definition</b> <a href="#l00035">Pedido.java:35</a></div></div>
+<div class="ttc" id="aclass_pedido_html_ab186d936229d3fe61dd9721bf02a7033"><div class="ttname"><a href="../../db/da0/class_pedido.html#ab186d936229d3fe61dd9721bf02a7033">Pedido.setAlimento</a></div><div class="ttdeci">void setAlimento(String alimento)</div><div class="ttdef"><b>Definition</b> <a href="#l00115">Pedido.java:115</a></div></div>
+<div class="ttc" id="aclass_pedido_html_ac43d623ea50d9c09251c20d539b176e4"><div class="ttname"><a href="../../db/da0/class_pedido.html#ac43d623ea50d9c09251c20d539b176e4">Pedido.getAlimento</a></div><div class="ttdeci">String getAlimento()</div><div class="ttdef"><b>Definition</b> <a href="#l00106">Pedido.java:106</a></div></div>
+<div class="ttc" id="aclass_pedido_html_ad5314c9ea2038941e17e938b1362581f"><div class="ttname"><a href="../../db/da0/class_pedido.html#ad5314c9ea2038941e17e938b1362581f">Pedido.bebida</a></div><div class="ttdeci">String bebida</div><div class="ttdef"><b>Definition</b> <a href="#l00036">Pedido.java:36</a></div></div>
+<div class="ttc" id="aclass_pedido_html_ae09c1c0a238815d2577e4ecde6cae77d"><div class="ttname"><a href="../../db/da0/class_pedido.html#ae09c1c0a238815d2577e4ecde6cae77d">Pedido.getNombre</a></div><div class="ttdeci">String getNombre()</div><div class="ttdef"><b>Definition</b> <a href="#l00088">Pedido.java:88</a></div></div>
+<div class="ttc" id="aclass_pedido_html_ae6dca04322ed9e8a32bfd9a829a2ebe9"><div class="ttname"><a href="../../db/da0/class_pedido.html#ae6dca04322ed9e8a32bfd9a829a2ebe9">Pedido.getHelado</a></div><div class="ttdeci">String getHelado()</div><div class="ttdef"><b>Definition</b> <a href="#l00142">Pedido.java:142</a></div></div>
+<div class="ttc" id="aclass_pedido_html_ae76ac3918e2aea2182e4101d1f623f5c"><div class="ttname"><a href="../../db/da0/class_pedido.html#ae76ac3918e2aea2182e4101d1f623f5c">Pedido.setNombre</a></div><div class="ttdeci">void setNombre(String nombre)</div><div class="ttdef"><b>Definition</b> <a href="#l00097">Pedido.java:97</a></div></div>
+<div class="ttc" id="aclass_pedido_html_aed270734a01380131d31c862ba701a49"><div class="ttname"><a href="../../db/da0/class_pedido.html#aed270734a01380131d31c862ba701a49">Pedido.nombre</a></div><div class="ttdeci">String nombre</div><div class="ttdef"><b>Definition</b> <a href="#l00034">Pedido.java:34</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dc/db0/_pedido_8java.html">Pedido.java</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

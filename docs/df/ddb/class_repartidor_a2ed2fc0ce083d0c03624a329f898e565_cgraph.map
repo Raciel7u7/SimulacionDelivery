@@ -1,0 +1,7 @@
+<map id="Repartidor.run" name="Repartidor.run">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,109,32"/>
+<area shape="rect" id="Node000002" href="$df/ddb/class_repartidor.html#a44ee5b89d57fe746b2ff94518151012e" title=" " alt="" coords="157,5,329,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,16,141,16,141,21,109,21"/>
+<area shape="rect" id="Node000003" href="$db/da0/class_pedido.html#a0861779a347e67bc42974b0bf69ae971" title=" " alt="" coords="377,5,541,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,16,361,16,361,21,329,21"/>
+</map>

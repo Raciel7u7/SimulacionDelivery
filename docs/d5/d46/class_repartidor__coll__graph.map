@@ -1,0 +1,11 @@
+<map id="Repartidor" name="Repartidor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="63,272,243,651"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,139,73,208"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,221,81,271,76,273,56,223"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="97,139,208,208"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,208,155,255,150,255,150,208"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="129,5,176,75"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,90,155,139,150,139,150,90"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="232,139,311,208"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="260,209,240,257,235,255,255,207"/>
+</map>

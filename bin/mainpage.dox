@@ -1,0 +1,125 @@
+/** \mainpage Simulación de Entrega de Pedidos
+
+\section intro Introducción
+Este proyecto tiene como objetivo simular el proceso de entrega de pedidos en un restaurante, abordando la gestión eficiente de pedidos y
+la asignación dinámica a repartidores. Se busca optimizar el flujo de trabajo desde la recepción del pedido hasta su entrega, utilizando estructuras de datos fundamentales como colas y pilas.
+
+\section problema Descripción del Problema
+En un restaurante, la gestión eficiente de los pedidos y su entrega oportuna son cruciales para la satisfacción del cliente. La falta de un sistema organizado
+puede resultar en demoras, errores en las entregas y, en última instancia, afectar la rentabilidad del negocio.
+
+Este proyecto aborda este problema mediante la simulación de un sistema de entrega de pedidos (extremadamente básico) que utiliza una cola para gestionar los
+pedidos entrantes y una lista de repartidores, cada uno con una pila para organizar los pedidos asignados. Esta simulación permite visualizar y analizar el flujo
+de pedidos, la asignación a repartidores y el proceso de entrega.
+
+\section implementacion Detalles de Implementación
+Para simular el sistema de entrega de pedidos, se implementaron las siguientes estructuras de datos:
+
+<ul>
+    <li><b>Cola (Queue):</b> Se utiliza una cola para almacenar los pedidos entrantes. Los nuevos pedidos se añaden al final de la cola y los repartidores toman los pedidos
+    del principio, siguiendo el principio FIFO (First-In, First-Out). Esto asegura que los pedidos se atiendan en el orden en que se recibieron.</li>
+    <li><b>Pila (Stack):</b> Cada repartidor tiene una pila para gestionar los pedidos que le son asignados. Los nuevos pedidos se añaden a la cima de la pila y el
+    repartidor entrega primero el pedido que se encuentra en la cima, siguiendo el principio LIFO (Last-In, First-Out). Esto permite al repartidor gestionar
+    eficientemente sus entregas, ya que el último pedido añadido es el primero en ser entregado.</li>
+</ul>
+
+\section clases Clases principales
+El programa se compone de las siguientes clases:
+
+<ul>
+    <li><b>Pedido:</b> Representa el pedido que hace un cliente.</li>
+    <li><b>Repartidor:</b> Representa a un repartidor que realizará entregas</li>
+    <li><b>Principal:</b> Clase principal que contiene el flujo del programa y la lógica de la simulación.</li>
+</ul>
+
+\section diagrama Diagrama de clases
+\image html src.png
+
+\section herramientas Herramientas utilizadas
+Para el desarrollo de este proyecto se utilizaron las siguientes herramientas:
+
+<ul>
+    <li><b>Visual Studio Code 1.74.3:</b> Editor de código ligero utilizado para la edición rápida de archivos y para facilitar el trabajo colaborativo en equipo gracias a
+    la extensión Live Share. <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
+    <li><b>IntelliJ IDEA Community Edition 2023.2:</b> IDE utilizado para generar el diagrama de clases UML de forma visual, a partir del código fuente del proyecto.
+    <a href="https://www.jetbrains.com/es-es/idea/">https://www.jetbrains.com/es-es/idea/</a></li>
+    <li><b>Jgrasp 2.0.2_02:</b> Entorno de desarrollo utilizado para pruebas y depuración del código. <a href="http://www.jgrasp.org/">http://www.jgrasp.org/</a></li>
+    <li><b>Doxygen 1.9.6:</b> Herramienta de generación de documentación. <a href="http://www.doxygen.org/">http://www.doxygen.org/</a></li>
+</ul>
+
+\section ejemplo Ejemplo de Ejecución
+<p>A continuación, un ejemplo de la ejecución del programa:</p>
+<b>Número de pedidos: 3</b>
+    <ul>
+        <li>Ingrese el alimento (DESAYUNO, COMIDA, O CENA): Omelette </li>
+        <li>Ingrese la bebida: Cafe </li>
+        <li>Ingrese el helado: Helado triple chocolate </li>
+        <li>A nombre de quién es el pedido: Maria </li>
+    </ul>
+
+    <ul>
+        <li>Ingrese el alimento (DESAYUNO, COMIDA, O CENA): Milanesa de pollo </li>
+        <li>Ingrese la bebida: Limonada </li>
+        <li>Ingrese el helado: Helado oreo </li>
+        <li>A nombre de quién es el pedido: Juan </li>
+    </ul>
+
+    <ul>
+        <li>Ingrese el alimento (DESAYUNO, COMIDA, O CENA): Pizza </li>
+        <li>Ingrese la bebida: Refresco </li>
+        <li>Ingrese el helado: Helado napolitano </li>
+        <li>A nombre de quién es el pedido: Ana </li>
+    </ul>
+
+\code{.unparsed}
+SALIDA DEL PROGRAMA:
+
+Repartidor1 entrego el Pedido a nombre de Ana
+alimento Pizza
+bebida Refresco
+helado Helado napolitano
+Fecha del pedido 02/11/2024 16:56:09
+fechaEntrega 02/11/2024 16:56:15
+
+Repartidor1 entrego el Pedido a nombre de Juan
+alimento Milanesa de pollo
+bebida Limonada
+helado Helado oreo
+Fecha del pedido 02/11/2024 16:55:46
+fechaEntrega 02/11/2024 16:56:44
+
+Repartidor1 entrego el Pedido a nombre de Maria
+alimento Omelette
+bebida Cafe
+helado Helado triple de chocolate
+Fecha del pedido 02/11/2024 16:55:24
+fechaEntrega 02/11/2024 16:56:59
+
+\endcode
+
+
+\section limitaciones Limitaciones
+El proyecto actual presenta las siguientes limitaciones:
+
+<ul>
+    <li><b>Capacidad limitada de los repartidores:</b> Cada repartidor solo puede manejar un máximo de 3 pedidos a la vez.</li>
+    <li><b>Asignación secuencial de pedidos:</b> Los pedidos se asignan a los repartidores de forma secuencial, sin considerar la distancia o la carga de trabajo de
+    cada repartidor.</li>
+    <li><b>Interfaz de usuario básica:</b> La interacción con el usuario se realiza a través de la consola.</li>
+</ul>
+
+\section mejoras Posibles Mejoras
+
+<ul>
+    <li>Implementar un algoritmo de asignación de pedidos más eficiente que considere más factores.</li>
+    <li>Desarrollar una interfaz gráfica de usuario (GUI) para una mejor interacción con el usuario.</li>
+    <li>Incorporar la gestión de tiempos de entrega y la posibilidad de que los repartidores rechacen pedidos si su capacidad está llena.</li>
+</ul>
+
+\section autor Autores
+
+<ul>
+    <li>Cruz Bautista Mauricio Raciel 3SB</li>
+    <li>Enriquez Rodriguez Alejandro Guillermo 3SB</li>
+</ul>
+*/
